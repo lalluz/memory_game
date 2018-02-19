@@ -1,0 +1,264 @@
+/*
+ * COLORS
+ *
+ * Dark Orange: #ef6c00
+ * Amber: #ffca28
+ * Grays for card back: #607d8b, #90a4ae 5%, #cfd8dc
+ * Oranges for card front: #ffc107, #ff8f00
+ */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    background: #fff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */
+    font-family: 'Coda', cursive;
+}
+
+h1 {
+    color: #ef6c00;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*
+ * Styles for the deck of cards
+ */
+
+.deck {
+    align-items: center;
+    background: linear-gradient(100deg, #ffca28 0%, #ef6c00 100%);
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 3em;
+    min-height: 680px;
+    padding: 32px;
+    width: 660px;
+}
+
+.deck .card {
+    align-items: center;
+    height: 125px;
+    width: 125px;
+    background: repeating-linear-gradient(#607d8b, #90a4ae 5%, #cfd8dc 5%);
+    border-radius: 8px;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-size: 0;
+    justify-content: center;
+}
+
+.deck .card.open {
+    background: linear-gradient(160deg, #ffc107 0%, #ff8f00 100%);
+    cursor: default;
+}
+
+.deck .card.show {
+    font-size: 50px;
+}
+
+.deck .card.match {
+    cursor: default;
+    background: linear-gradient(160deg, #ffc107 0%, #ff8f00 100%);
+    font-size: 50px;
+    color: #ef6c00;
+}
+
+/*
+ * Styles for the Score Panel
+ */
+
+.score-panel {
+    width: 600px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.score-panel .counter {
+    text-align: center;
+    width: 25%;
+}
+
+.score-panel .timer-min, .dot, .timer-sec, .moves {
+    color: #ff8f00;
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: center;
+    width: 25%;
+}
+
+.score-panel .stars {
+    padding: 0;
+    width: 25%;
+}
+
+.score-panel .stars li {
+    color: #ffc107;
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 1.5em;
+}
+
+.score-panel .restart {
+    cursor: pointer;
+    color: #ef6c00;
+    font-size: 1.5em;
+    width: 25%;
+    text-align: right;
+}
+
+/*
+ * CSS animation to shake cards when not matched
+ */
+
+.shake {
+  animation: shake 1s;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+/*
+ * Mediaqueries
+ */
+
+@media only screen and (max-width: 750px) {
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .deck {
+        min-height: 460px;
+        padding: 30px;
+        width: 450px;
+    }
+
+    .deck .card {
+        height: 80px;
+        width: 80px;
+    }
+
+    .deck .card.show {
+        font-size: 40px;
+    }
+
+    .deck .card.match {
+        font-size: 40px;
+    }
+
+    .score-panel {
+        width: 430px;
+    }
+
+    .score-panel .timer-min, .dot, .timer-sec, .moves {
+        font-size: 1em;
+    }
+
+    .counter .text {
+        font-size: 0.8em;
+    }
+
+    .score-panel .stars li {
+        padding-right: 8px;
+        font-size: 1.3em;
+    }
+
+    .score-panel .restart {
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .deck {
+        min-height: 350px;
+        padding: 15px;
+        width: 350px;
+    }
+
+    .deck .card {
+        height: 66px;
+        width: 66px;
+    }
+
+    .deck .card.show {
+        font-size: 30px;
+    }
+
+    .deck .card.match {
+        font-size: 30px;
+    }
+
+    .score-panel {
+        width: 330px;
+    }
+
+    .score-panel .timer-min, .dot, .timer-sec, .moves {
+        font-size: 0.8em;
+    }
+
+    .counter .text {
+        font-size: 0.7em;
+    }
+
+    .score-panel .stars li {
+        padding-right: 5px;
+        font-size: 1em;
+    }
+
+    .score-panel .restart {
+        font-size: 1em;
+    }
+}

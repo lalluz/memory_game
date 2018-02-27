@@ -1,20 +1,22 @@
 # Memory Game Project
+A [Udacity Front End Nanodegree](https://eu.udacity.com/course/front-end-web-developer-nanodegree--nd001) project.
+The Memory Game with 16 cards has been developed with HTML, CSS and JavaScript.
 
-## Table of Contents
+## Project Contents
+This project contains:
+* An html file - index.html.
+* A stylesheet - app.css.
+* A JavaScript - file app.js.
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+## Requirements
+A browser to open it. It works on all kind of devices, from mobile to desktop.
 
-## Instructions
+## How to Run it
+To see the web page simply open the browser at this url:
+https://lalluz.github.io/memory_game/
 
-The starter project has some HTML and CSS styling to display a static version of the Memory Game project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+If you are interested in the source code download it and unzip it, or clone this repository:
+https://github.com/lalluz/memory_game.git
 
-To get started, open `js/app.js` and start building out the app's functionality
-
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
-
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+## Licence
+MIT Licence.

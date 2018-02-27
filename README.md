@@ -1,6 +1,6 @@
 # Memory Game Project
 A [Udacity Front End Nanodegree](https://eu.udacity.com/course/front-end-web-developer-nanodegree--nd001) project.
-The Memory Game with 16 cards has been developed with HTML, CSS and JavaScript.
+A classic Memory Game with 16 cards developed with HTML, CSS and JavaScript.
 
 ## Project Contents
 This project contains:

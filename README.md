@@ -18,8 +18,9 @@ https://lalluz.github.io/memory_game/
 If you are interested in the source code download it and unzip it, or clone this repository:
 https://github.com/lalluz/memory_game.git
 
-## Licence
+## Licence  
 MIT Licence.
 
-## Screenshot
-(screenshot_memory_game.png)
+## Screenshot  
+* [Ready game](screenshot_memory_game.png)
+* [Playing game](screenshot_memory_game_1.png)

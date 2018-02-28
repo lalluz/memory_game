@@ -219,8 +219,13 @@ function restart() {
  */
 function displayModal() {
     stopTimer();
-    const gameover_message = `You won in ${moves} moves!\n` +
-        `Your time is ${minutes}.${seconds}!\n` +
+
+    let time_string = (minutes == 0) ?
+        `${seconds} seconds`:
+        `${minutes} min and ${seconds} sec`;
+
+    let gameover_message = `You won in ${moves} moves!\n` +
+        `Your time is ${time_string}!\n` +
         `Your score is ${star_count} stars!\n\n` +
         `Do you want to play again?`;
     if (confirm(gameover_message)) {

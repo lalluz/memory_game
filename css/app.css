@@ -262,3 +262,21 @@ h1 {
         font-size: 1em;
     }
 }
+
+@media only screen and (max-width: 400px) {
+
+    .deck {
+        min-height: 280px;
+        padding: 15px;
+        width: 280px;
+    }
+
+    .deck .card {
+        height: 55px;
+        width: 55px;
+    }
+
+    .score-panel {
+        width: 260px;
+    }
+}

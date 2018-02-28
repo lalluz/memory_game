@@ -1,5 +1,5 @@
 # Memory Game Project
-A [Udacity Front End Nanodegree](https://eu.udacity.com/course/front-end-web-developer-nanodegree--nd001) project.
+A [Udacity Front End Nanodegree](https://eu.udacity.com/course/front-end-web-developer-nanodegree--nd001) project.  
 A classic Memory Game with 16 cards developed with HTML, CSS and JavaScript.
 
 ## How to Play
@@ -17,7 +17,7 @@ This project contains:
 A browser to open it. It works on all kind of devices, from mobile to desktop.
 
 ## How to Run it
-To see the web page and play simply open the browser at this url:
+To see the web page and play simply open the browser at this url:  
 https://lalluz.github.io/memory_game
 
 If you are interested in the source code download it and unzip it, or clone this repository:
@@ -26,6 +26,6 @@ https://github.com/lalluz/memory_game.git
 ## Licence
 MIT Licence.
 
-## Screenshot
+## Screenshots
 * [Ready game](screenshot_memory_game.png)
 * [Playing game](screenshot_memory_game_1.png)

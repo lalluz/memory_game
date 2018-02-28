@@ -78,12 +78,12 @@ function addToPlayingCards(card) {
 }
 
 function decrementStars() {
-    if (star_count > 0) {
+    if (star_count > 1) {
         let current_star = star_ul.firstElementChild;
         star_ul.removeChild(current_star);
         star_count -= 1;
     } else {
-        star_count = 0;
+        star_count = 1;
     }
 }
 
@@ -249,7 +249,7 @@ function play(ev) {
         if (playing_cards.length == 2) {
             checkMatch();
 
-            if (moves % 10 == 0) {
+            if (moves % 12 == 0) {
                 decrementStars();
             }
         }
